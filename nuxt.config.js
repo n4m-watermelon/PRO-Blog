@@ -1,10 +1,10 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+ 
   ssr: false,
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
-    title: 'demo-1',
+    title: 'VNRevolution',
     htmlAttrs: {
       lang: 'en'
     },
@@ -14,32 +14,34 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap' }
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  
   css: [
+    "@/assets/css/app.css"
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+ 
   plugins: [
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  
   buildModules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+ 
   modules: [
     '@nuxt/content'
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  
   build: {
   },
   content: {
