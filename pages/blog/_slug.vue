@@ -1,6 +1,6 @@
 <template>
 <article class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row">
-  <pre> {{ article }} </pre>
+  <!-- <pre> {{ article }} </pre> -->
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
         <img :src="article.img" :alt="article.alt" class="absolute h-full w-full object-cover" />
         <div class="overlay"></div>
@@ -26,11 +26,9 @@
         </div>
         <div class="flex absolute top-3rem right-3rem">
             <NuxtLink to="/" class="mr-8 self-center text-white font-bold hover:underline">
-                All articles
+               Trang chủ
             </NuxtLink>
-            <a href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content" class="mr-8 self-center text-white font-bold hover:underline">
-                Tutorial
-            </a>
+           
             <AppSearchInput />
         </div>
     </div>

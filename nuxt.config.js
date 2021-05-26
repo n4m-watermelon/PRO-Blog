@@ -1,8 +1,6 @@
 export default {
- 
+
   ssr: false,
-
-
   head: {
     title: 'VNRevolution',
     htmlAttrs: {
@@ -25,6 +23,7 @@ export default {
   ],
  
   plugins: [
+    '@/plugins/commonFilter.js'
   ],
 
   

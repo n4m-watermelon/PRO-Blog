@@ -4,12 +4,12 @@
       v-model="searchQuery"
       autocomplete="off"
       placeholder="Tìm kiếm gì đó ?"
-      class="block w-full pl-8 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-300 text-gray-700  rounded-md focus:bg-white bg-white focus:outline-none"
+      class="block w-full pl-4 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-300 text-gray-700  rounded-md focus:bg-white bg-white focus:outline-none"
     />
       
     <ul
      v-if="articles.length" 
-      class="z-10 absolute w-auto top-22  bg-white dark:bg-gray-900 border-gray-300 overflow-hidden"
+      class="z-10 absolute w-auto top-24  bg-white dark:bg-gray-900 border-gray-300 overflow-hidden"
     >
       <li v-for="article of articles" :key="article.slug" class="hover:bg-gray-200">
         <NuxtLink

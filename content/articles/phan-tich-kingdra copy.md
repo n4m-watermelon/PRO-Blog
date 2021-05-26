@@ -1,11 +1,11 @@
 ---
-title: My First Blog Post
-description: Learning how to use @nuxt/content to create a blog
+title: Chuyên mục phân tích pokemon Kingdra
+description: Kingdra là 1 pokemon có chỉ số SPATK khá cao và khả năng x2 SPD trong môi trường rain, trong bài viết này chúng ta cùng tìm hiểu về khả năng của nó nào
 img: phan-tich-kingdra.jpg
 alt: my first blog post
 author: 
-  name: N4mSama
-  bio: aaa123
+  name: Peter
+  bio: All about Peter and what he does and where he works
   img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 tags: 
   - PVP
