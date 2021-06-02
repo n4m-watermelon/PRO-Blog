@@ -8,37 +8,19 @@ author:
   bio: aaa123
   img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 tags: 
-  - PVP
+- PVP
 ---
 
-Welcome to my first blog post using content module
+Love**is**bold
 
-## This is a heading
-This is some more info
+
+
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+
+
+
+
 <div class="bg-blue-500 text-white p-4 mb-4">
   This is HTML inside markdown that has a class some classes
 </div>
 
-<info-box>
-  <template #info-box>
-    This is a vue component inside markdown using slots
-  </template>
-</info-box>
-
-```js[nuxt.config.js]
-export default {
-  nuxt: "is the best"
-}
-```
-```html[my-first-blog-post.md]
-<p>code styling is easy</p>
-```
-
-### This is a sub heading
-This is some more info
-
-### This is another sub heading
-This is some more info
-
-## This is another heading
-This is some more info

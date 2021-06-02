@@ -1,9 +1,7 @@
 <template>
 <div class="flex flex-col h-screen">
     <div class="md:mx-0 mx-5 bg-white px-2 md:px-0">
-        <Header1 />
-       
-     
+        <Header />
     </div>
     <div class="flex flex-grow">
         <!-- content here !!! -->
@@ -67,7 +65,6 @@ export default {
         return {
             moment,
             rightNow: null
-
         }
     },
     mounted() {

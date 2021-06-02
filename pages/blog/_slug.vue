@@ -42,14 +42,7 @@
                             <h1 class="mb-2 text-3xl font-black tracking-tightertext-black lg:text-7xl md:text-4xl"> {{ article.title }} </h1>
                             <p class="mt-4 text-lg leading-snug tracking-tight text-gray-500 lg:w-2/3"> {{ article.description }}</p>
                         </div>
-                        <div class="flex flex-col lg:flex-row lg:space-x-12">
-                            <div class="w-full px-4 mt-12 text-lg leading-snug tracking-tight text-gray-500 lg:px-0">
-                                <p class="mb-5">{{ article.content }}</p>
-                                <div v-for="link of article.toc" :key="link.id">
-                                    <span>{{body}} {{ link.text }}</span>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div>
                     </div>
@@ -58,11 +51,17 @@
             <div>
                 <PrevNext :prev="prev" :next="next" class="mt-8" />
                 <author :author="article.author" />
+                <info-box />
             </div>
         </div>
 
     </div>
+   
+    <nuxt-content :document="article" />
+  
 </article>
+
+
 </template>
 
 <script>
