@@ -1,6 +1,5 @@
 <template>
 <article class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row">
-  <!-- <pre> {{ article }} </pre> -->
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
         <img :src="article.img" :alt="article.alt" class="absolute h-full w-full object-cover" />
         <div class="overlay"></div>
@@ -38,30 +37,23 @@
                 <div class="container mx-auto">
                     <div>
                         <div class="flex flex-col w-full mb-2 text-left ">
-                            <p class="my-4 text-lg leading-snug tracking-tight text-blue-400"> {{ formatDate(article.updatedAt) }} </p>
-                            <h1 class="mb-2 text-3xl font-black tracking-tightertext-black lg:text-7xl md:text-4xl"> {{ article.title }} </h1>
-                            <p class="mt-4 text-lg leading-snug tracking-tight text-gray-500 lg:w-2/3"> {{ article.description }}</p>
+                            <p class="text-lg leading-snug tracking-tight text-blue-400"> {{ formatDate(article.updatedAt) }} </p>
+                            <h1 class="my-4 font-black tracking-tightertext-black lg:text-2xl md:text-xl"> {{ article.title }} </h1>
+                            <p class="text-base text-gray-500"> {{ article.description }}</p>
                         </div>
-                       
                     </div>
-                    <div>
-                    </div>
+                    <article>
+                      <nuxt-content :document="article" />
+                    </article>
                 </div>
             </div>
             <div>
                 <PrevNext :prev="prev" :next="next" class="mt-8" />
                 <author :author="article.author" />
-                <info-box />
             </div>
         </div>
-
     </div>
-   
-    <nuxt-content :document="article" />
-  
 </article>
-
-
 </template>
 
 <script>
@@ -109,7 +101,7 @@ export default {
 
 <style>
 .nuxt-content p {
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 
 .nuxt-content h2 {
