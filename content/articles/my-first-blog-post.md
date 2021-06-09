@@ -1,15 +1,14 @@
 ---
-title: My First Blog Post
-description: Learning how to use @nuxt/content to create a blog
-img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+title: Root
+description: Kingdra là 1 pokemon có chỉ số SPATK khá cao và khả năng x2 SPD trong môi trường rain, trong bài viết này chúng ta cùng tìm hiểu về khả năng của nó nào
+img: phan-tich-kingdra.jpg
 alt: my first blog post
 author: 
-  name: Peter
+  name: N4mSama
   bio: All about Peter and what he does and where he works
   img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 tags: 
-  - nuxtjs
-  - javascript
+  - PVP
 ---
 
 Welcome to my first blog post using content module
